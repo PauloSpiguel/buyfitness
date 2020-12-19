@@ -3,8 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyled = createGlobalStyle`
 
   :root {
-    --color-background: #edf2f4;
-    --color-primary: #00509d;
+    --color-background: radial-gradient(circle, rgba(255,153,15,1) 0%, rgba(52,53,54,1) 100%);
+    --color-primary: #FF990F;
     --color-text: #073b4c;
     --color-secondary: #edf2f4;
     --color-border: #8d99ae;
@@ -13,6 +13,7 @@ const GlobalStyled = createGlobalStyle`
     --color-white: #fff;
     --color-warning: #ffd166;
     --color-green: #06d6a0;
+    --color-dark: #121212;
   }
 
   * {
@@ -24,7 +25,7 @@ const GlobalStyled = createGlobalStyle`
 
   body {
     background: var(--color-background);
-    color: var(--color-primary);
+    color: var(--color-text);
     -webkit-font-smoothing: antialiased !important;
   }
 
